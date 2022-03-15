@@ -113,7 +113,7 @@ namespace MateMachine.Services
             }
         }
 
-        void Traverse(Tuple<string, string, double> parent, ref List<string> list, string to, string p = "")
+        void Traverse(Tuple<string, string, double> parent, ref List<string> list, string dest, string p = "")
         {
             if (string.IsNullOrEmpty(p))
                 p = $"{parent.Item1}-{parent.Item2}";
@@ -122,8 +122,8 @@ namespace MateMachine.Services
                 if (p.Contains($"{child.Item1}-{child.Item2}"))
                     return;
                 list.Add($"{p},{child.Item1}-{child.Item2}");
-                if (child.Item2 != to)
-                    Traverse(child, ref list, to, $"{p},{child.Item1}-{child.Item2}");
+                if (child.Item2 != dest)
+                    Traverse(child, ref list, dest, $"{p},{child.Item1}-{child.Item2}");
             }
         }
     }
