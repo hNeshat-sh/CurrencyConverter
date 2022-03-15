@@ -19,7 +19,7 @@ namespace MateMachine.Services
         /// <summary>
         /// Converts the specified amount to the desired currency.
         /// </summary>
-        double Convert(string fromCurrency, string toCurrency, double amount);
+        double Convert(string fromCurrency, string toCurrency, double amount); 
 
         double GetCurrencyRate(string fromCurrency, string toCurrency);
     }

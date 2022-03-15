@@ -28,7 +28,7 @@ namespace MateMachine.Services
         public void UpdateConfiguration(IEnumerable<Tuple<string, string, double>> conversionRates)
         {
             _conversionRates = conversionRates.ToList();
-            AddReverseCurrencyRates();
+            AddReverseCurrencyRates(); 
         }
 
         void AddReverseCurrencyRates()

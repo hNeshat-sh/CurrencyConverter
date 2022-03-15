@@ -26,10 +26,6 @@ namespace MateMachine
             Console.WriteLine($"USD-EUR: {_currencyConverter.GetCurrencyRate("USD", "EUR")}"); // 0.86
             Console.WriteLine($"USD-EUR: {_currencyConverter.GetCurrencyRate("CAD", "USD")}"); // 0.7462686567164179
             Console.WriteLine($"USD-EUR: {_currencyConverter.GetCurrencyRate("CAD", "EUR")}"); // 0.6417910447761194
-            //Console.WriteLine($"USD-EUR: {_currencyConverter.GetCurrencyRate("USD", "CAD")}"); // 1.34
-            //Console.WriteLine($"USD-EUR: {_currencyConverter.GetCurrencyRate("USD", "GBP")}"); // 0.7772
-            //Console.WriteLine($"USD-EUR: {_currencyConverter.GetCurrencyRate("USD", "GBP2")}"); // 0
-            
         }
     }
 }
